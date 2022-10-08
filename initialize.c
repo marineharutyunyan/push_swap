@@ -69,6 +69,7 @@ t_list	*init_a_stack(int *arr, int len)
 		}
 		prev_node = new_node;
 	}
+	free(prev_node);
 	return (new_list);
 }
 
